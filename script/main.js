@@ -26,7 +26,7 @@ const animationTimeline = () => {
     skewX: "-15deg",
   };
 
-  const tl = new TimelineMax(onComplete: redirect);
+  const tl = new TimelineMax({onComplete: redirect});
 
   tl.to(".container", 0.1, {
     visibility: "visible",
