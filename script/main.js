@@ -263,11 +263,10 @@ const animationTimeline = () => {
         rotation: 90,
       },
       "+=1"
-    );
+    ).then(redirect());
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
-  window.location.replace("http://www.w3schools.com");
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
@@ -300,6 +299,10 @@ const resolveFetch = () => {
     fetchData();
     resolve("Fetch done!");
   });
+};
+
+const redirect = () => {
+    window.location.replace("http://www.w3schools.com");
 };
 
 resolveFetch().then(animationTimeline());
