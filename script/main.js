@@ -267,7 +267,7 @@ const animationTimeline = () => {
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
-
+  window.location.replace("http://www.w3schools.com");
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
