@@ -26,7 +26,7 @@ const animationTimeline = () => {
     skewX: "-15deg",
   };
 
-  const tl = new TimelineMax();
+  const tl = new TimelineMax(onComplete: redirect);
 
   tl.to(".container", 0.1, {
     visibility: "visible",
@@ -263,7 +263,7 @@ const animationTimeline = () => {
         rotation: 90,
       },
       "+=1"
-    ).then(redirect());
+    );
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
