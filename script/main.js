@@ -302,7 +302,7 @@ const resolveFetch = () => {
 };
 
 const redirect = () => {
-    window.location.replace("http://www.w3schools.com");
+    window.location.replace("https://saba.arian.lol");
 };
 
 resolveFetch().then(animationTimeline());
